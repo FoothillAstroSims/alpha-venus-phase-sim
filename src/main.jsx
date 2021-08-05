@@ -204,7 +204,11 @@ class PlanetaryConfigSim extends React.Component {
                         </div>
                     </div>
 
+                    
                     <div className="controls">
+                        
+                        <p></p>
+
                         <div className="custom-control custom-checkboxes">
                             <input type="checkbox"
                                    onChange={this.showOrbits.bind(this)}
@@ -215,17 +219,10 @@ class PlanetaryConfigSim extends React.Component {
                                 Label Orbits
                             </label>
                         </div>
+                        
+                        <p></p>
 
-                        <div className="custom-control custom-checkbox">
-                            <input type="checkbox"
-                                   onChange={this.showElongationAngle.bind(this)}
-                                   checked={this.state.showElongation}
-                                   id="angle-display"
-                            />
-                            <label className="" htmlFor="angle-display" id="text">
-                                Show Elongation Angle
-                            </label>
-                        </div>
+
                     </div>
 
                     <div id="days">

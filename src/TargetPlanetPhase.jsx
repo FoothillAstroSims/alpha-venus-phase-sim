@@ -48,7 +48,7 @@ export default class TargetPlanetPhase extends React.Component {
 
         this.targetPlanet = this.drawTargetPlanetZodiac();
         this.drawShades();
-        this.elongationText = this.drawText('Elongation: 180', 15, 10);
+        //this.elongationText = this.drawText('Elongation: 180', 15, 10);
         this.elongationDirectionText = this.drawText('', 160, 10);
         this.distanceText = this.drawText(`observer-target distance: \n${this.getDistanceBetweenBodies()} au`, 390, 10);
         this.drawPhase(this.leftShade, this.rightShade, this.convertPhase(Math.PI), 1.002 * (275 / 2));
@@ -133,7 +133,7 @@ export default class TargetPlanetPhase extends React.Component {
             elongationAngle += 2 * Math.PI;
         }
 
-        this.updateTexts(elongationAngle);
+        //this.updateTexts(elongationAngle);
         return elongationAngle;
     }
 
@@ -216,7 +216,7 @@ export default class TargetPlanetPhase extends React.Component {
 
     animate() {
         this.getElongationAngle();
-        // this.updateTexts();
+        this.updateTexts();
     }
 
     updateTexts(elongationAngle) {
@@ -238,8 +238,8 @@ export default class TargetPlanetPhase extends React.Component {
         let textNum = String(" " + num.toFixed(0)).slice(-6);
         textNum += '°';
 
-        this.elongationText.text = `Elongation: ${textNum}`;
-        this.elongationDirectionText.text = direction;
+        //this.elongationText.text = `Elongation: ${textNum}`;
+        //this.elongationDirectionText.text = direction;
     }
 
     drawShades() {
