@@ -50,7 +50,7 @@ class PlanetaryConfigSim extends React.Component {
     render() {
         return <React.Fragment>
             <nav className="navbar navbar-expand-md navbar-light bg-dark d-flex justify-content-between">
-                <span className="navbar-brand mb-0 text-light h1">Copernican Planetary Phases</span>
+                <span className="navbar-brand mb-0 text-light h1">< a href="https://foothill.edu/astronomy/astrosims.html">AstroSims</a> > Copernican Planetary Phases</span>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link text-light" href="#" onClick={this.onResetClick.bind(this)}>Reset</a>
